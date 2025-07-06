@@ -20,7 +20,9 @@ except Exception as e:
 
 # API configuration
 url = "https://api.api-ninjas.com/v1/stockprice"
-API_Key = "a0I23j/LmvEOAGJVfTm6WQ==wobTmfZ9FXI8MBEp"
+load_dotenv()  # take environment variables from .env
+
+API_Key =os.getenv("API_KEY")
 
 # Helper functions
 def format_float(value):
